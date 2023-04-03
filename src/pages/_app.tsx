@@ -62,7 +62,7 @@ function MyApp(props: AppProps) {
           content="The most popular AMM on VELAS! Earn WAGYU through yield farming or win it in the Lottery, then stake it in Sizzle Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by Wagyuswap), NFTs, and more, on a platform you can trust."
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="WagyuSwap - A next evolution DeFi exchange on VELAS Chain" />
+        <meta name="twitter:title" content="WagyuSwap - The tastiest multichain dex in the world" />
       </Head>
       <Providers store={store}>
         <Blocklist>

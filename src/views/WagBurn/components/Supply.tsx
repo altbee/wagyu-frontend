@@ -102,16 +102,19 @@ export const Supply = ({ burn }: IProps) => {
       { label: 'Total WAG Supply', value: formatWag(burn.totalSupply) },
       { label: 'Total WAG Supply on BSC', value: formatWag(burn.bscTotalSupply) },
       { label: 'Total WAG Supply on VELAS', value: formatWag(burn.vlxTotalSupply) },
+      { label: 'Total WAG Supply on TELOS', value: formatWag(burn.tlosTotalSupply) },
     ],
     [ETab.TotalC]: [
       { label: 'Total Circulating Supply', value: formatWag(burn.cSupply) },
       { label: 'Total Circulating Supply on BSC', value: formatWag(burn.bscCSupply) },
       { label: 'Total Circulating Supply on VELAS', value: formatWag(burn.vlxCSupply) },
+      { label: 'Total Circulating Supply on TELOS', value: formatWag(burn.tlosCSupply) },
     ],
     [ETab.TotalB]: [
       { label: 'Total WAG Burnt', value: formatWag(burn.totalBurn) },
       { label: 'Total WAG Burnt on BSC', value: formatWag(burn.bscBurn) },
       { label: 'Total WAG Burnt on VELAS', value: formatWag(burn.vlxBurn) },
+      { label: 'Total WAG Burnt on TLOS', value: formatWag(burn.tlosBurn) },
     ],
   }
 

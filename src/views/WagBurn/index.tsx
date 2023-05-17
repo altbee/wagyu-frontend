@@ -48,27 +48,33 @@ const BurnContainer = styled.div`
 
 export interface IBurnInfo {
   bscTotalSupply: BigNumber
+  tlosTotalSupply: BigNumber
   vlxTotalSupply: BigNumber
   totalSupply: BigNumber
   bscBurn: BigNumber
   vlxBurn: BigNumber
+  tlosBurn: BigNumber
   totalBurn: BigNumber
   nextBurn: BigNumber
   bscCSupply: BigNumber
   vlxCSupply: BigNumber
+  tlosCSupply: BigNumber
   cSupply: BigNumber
 }
 const ZERO = BigNumber.from(0)
 const defaultBurnInfo: IBurnInfo = {
   bscTotalSupply: ZERO,
   vlxTotalSupply: ZERO,
+  tlosTotalSupply: ZERO,
   totalSupply: ZERO,
   bscBurn: ZERO,
   vlxBurn: ZERO,
+  tlosBurn: ZERO,
   totalBurn: ZERO,
   nextBurn: ZERO,
   bscCSupply: ZERO,
   vlxCSupply: ZERO,
+  tlosCSupply: ZERO,
   cSupply: ZERO,
 }
 

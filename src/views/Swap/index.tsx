@@ -96,7 +96,7 @@ export default function Swap() {
   const { isMobile } = useMatchBreakpoints()
   const [isChartExpanded, setIsChartExpanded] = useState(false)
   const [userChartPreference, setUserChartPreference] = useExchangeChartManager(isMobile)
-  const [isChartDisplayed, setIsChartDisplayed] = useState(userChartPreference)
+  const [isChartDisplayed, setIsChartDisplayed] = useState(false)
   const { refreshBlockNumber, isLoading } = useRefreshBlockNumberID()
 
   useEffect(() => {
@@ -376,7 +376,7 @@ export default function Swap() {
             outputCurrencyId={outputCurrencyId}
             outputCurrency={currencies[Field.OUTPUT]}
             isChartExpanded={isChartExpanded}
-            setIsChartExpanded={setIsChartExpanded}
+            setIsChartExpanded={() => {}}
             isChartDisplayed={isChartDisplayed}
             currentSwapPrice={singleTokenPrice}
           />
@@ -389,14 +389,14 @@ export default function Swap() {
               outputCurrencyId={outputCurrencyId}
               outputCurrency={currencies[Field.OUTPUT]}
               isChartExpanded={isChartExpanded}
-              setIsChartExpanded={setIsChartExpanded}
+              setIsChartExpanded={() => {}}
               isChartDisplayed={isChartDisplayed}
               currentSwapPrice={singleTokenPrice}
               isMobile
             />
           }
           isOpen={isChartDisplayed}
-          setIsOpen={setIsChartDisplayed}
+          setIsOpen={() => {}}
         />
         <Flex flexDirection="column">
           <StyledSwapContainer $isChartExpanded={isChartExpanded}>
@@ -405,7 +405,7 @@ export default function Swap() {
                 <CurrencyInputHeader
                   title={t('Swap')}
                   subtitle={t('Trade tokens in an instant')}
-                  setIsChartDisplayed={setIsChartDisplayed}
+                  setIsChartDisplayed={() => {}}
                   isChartDisplayed={isChartDisplayed}
                   hasAmount={hasAmount}
                   onRefreshPrice={onRefreshPrice}

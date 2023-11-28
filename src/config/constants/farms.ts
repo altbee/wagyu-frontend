@@ -223,6 +223,17 @@ const farms: SerializedFarmConfig[] =
           token: serializedTokens.bnb,
           quoteToken: serializedTokens.cake,
         },
+        {
+          pid: 22,
+          v1pid: 22,
+          lpSymbol: 'stVLX_VLX LP',
+          lpAddresses: {
+            111: '',
+            106: '0xd42846DCbbecDEf542D6bCc6e4E170171a2Ae459',
+          },
+          token: serializedTokens.stvlx,
+          quoteToken: serializedTokens.wvlx,
+        },
       ]
     : [
         /**

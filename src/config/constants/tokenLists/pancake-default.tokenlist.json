@@ -27,6 +27,14 @@
       "logoURI": "https://github.com/wagyuswapapp/assets/blob/master/blockchains/velas/assets/0xc579d1f3cf86749e05cd06f7ade17856c2ce3126/logo.png?raw=true"
     },
     {
+      "name": "Staked VLX",
+      "symbol": "stVLX",
+      "address": "0x3557371afed82dd683de278924bd0e1a790a3c49",
+      "chainId": 106,
+      "decimals": 18,
+      "logoURI": "https://github.com/wagyuswapapp/assets/blob/master/blockchains/velas/assets/0x3557371afed82dd683de278924bd0e1a790a3c49/logo.png?raw=true"
+    },
+    {
       "name": "Velas Pad",
       "symbol": "VLXPAD",
       "address": "0xa065e0858417dfc7abc6f2bd4d0185332475c180",
